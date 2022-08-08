@@ -4,7 +4,7 @@ const Context = React.createContext();
 
 function ContextProvider(props) {
   const [allBeers, setAllBeers] = useState([]);
-  const [cataloguePage, setCataloguePage] = useState(1);
+  const [cataloguePage, setCataloguePage] = useState('1');
   console.log(allBeers);
 
   useEffect(() => {
@@ -15,12 +15,16 @@ function ContextProvider(props) {
   }, [cataloguePage]);
 
   return (
-    <Context.Provider value={{ allBeers, cataloguePage, setCataloguePage }}>
+    <Context.Provider
+      value={{
+        allBeers,
+        cataloguePage,
+        setCataloguePage,
+      }}
+    >
       {props.children}
     </Context.Provider>
   );
 }
 
 export { ContextProvider, Context };
-
-//'https://api.punkapi.com/v2/beers?abv_gt=7&abv_lt=10&per_page=80' Working for filter
