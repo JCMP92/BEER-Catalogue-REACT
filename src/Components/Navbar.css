@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'B612', sans-serif;
+  font-weight: 400;
+
+  width: 100vw;
+  height: 100px;
+  background-color: #222831;
+}
+.navbar > h2 {
+  width: 150px;
+  text-decoration: none;
+}
+.navbar > h2 > a {
+  text-decoration: none;
+  color: #ffd369;
+}
+.navbar > h2:hover {
+  transform: scale(1.1);
+}

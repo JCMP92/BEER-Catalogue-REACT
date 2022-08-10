@@ -1,0 +1,18 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: calc(100vh - 100px);
+
+  background-image: url('../Img/gioele-fazzeri-mm1yH-RaU2s-unsplash.jpg');
+  background-size: cover;
+}
+.home-page > h1 {
+  font-family: 'B612', sans-serif;
+  font-weight: 400;
+  font-size: 150px;
+  color: #eeeeee;
+  text-shadow: 2px 2px 8px #393e46;
+}

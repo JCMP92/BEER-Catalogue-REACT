@@ -11,7 +11,8 @@ function BeerDetails() {
 
   const thisBeer = allBeers.find((beer) => beer.name === beerName);
 
-  //I use the if statement here to check if the variable thisBeer has a value assigned, so then I can proceed to use it´s values (thisBeer.name, thisBeer.image_url, etc.).
+  //I use the if statement here to check if the variable thisBeer has a value assigned, if it has no value assigned it kind of wait until it does,
+  // then it proceeds to use it´s values (thisBeer.name, thisBeer.image_url, etc.).
   if (thisBeer) {
     return (
       <div className="beer-detail">

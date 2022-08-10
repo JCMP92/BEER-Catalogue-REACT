@@ -1,3 +1,4 @@
+import './BeerCard.css';
 import { Link } from 'react-router-dom';
 
 function Beer(props) {

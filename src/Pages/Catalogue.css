@@ -1,0 +1,44 @@
+.beer-catalogue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+
+  background-color: #eeeeee;
+}
+.beer-catalogue > h1 {
+  font-family: 'B612', sans-serif;
+  font-weight: 400;
+  color: #393e46;
+}
+.beer-catalogue > h3 {
+  font-family: 'B612', sans-serif;
+  font-weight: 400;
+  color: #393e46;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.filter-button {
+  background-color: transparent;
+  margin: 0 5px;
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+}
+.filter-button:hover {
+  transform: scale(1.1);
+}
+.page-btn {
+  background-color: transparent;
+  margin: 10px 2px;
+  font-family: 'Roboto';
+}
+.page-btn:hover {
+  transform: scale(1.1);
+}
+.beers-container {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}

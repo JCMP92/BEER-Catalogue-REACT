@@ -1,5 +1,10 @@
+import './Home.css';
 function Home() {
-  return <h1>Beer-tlán</h1>;
+  return (
+    <div className="home-page">
+      <h1>SKÖL</h1>
+    </div>
+  );
 }
 
 export default Home;
