@@ -1,6 +1,6 @@
 import './App.css';
+import BeerDetails from './Components/BeerDetails';
 import Navbar from './Components/Navbar';
-import Favorites from './Pages/Favorites';
 import Catalogue from './Pages/Catalogue';
 import Home from './Pages/Home';
 import { Routes, Route } from 'react-router-dom';
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/catalogue" element={<Catalogue />} />
-        <Route path="/favorites" element={<Favorites />} />
+        <Route exact path="/catalogue/:beerName" element={<BeerDetails />} />
       </Routes>
     </div>
   );

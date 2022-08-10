@@ -5,7 +5,7 @@ const Context = React.createContext();
 function ContextProvider(props) {
   const [allBeers, setAllBeers] = useState([]);
   const [cataloguePage, setCataloguePage] = useState('1');
-  console.log(allBeers);
+  const [shownBeers, setShownBeers] = useState([]);
 
   useEffect(() => {
     fetch(`https://api.punkapi.com/v2/beers?page=${cataloguePage}&per_page=80`)
@@ -20,6 +20,8 @@ function ContextProvider(props) {
         allBeers,
         cataloguePage,
         setCataloguePage,
+        shownBeers,
+        setShownBeers,
       }}
     >
       {props.children}

@@ -1,10 +1,15 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Beer from '../Components/BeerCard';
 import { Context } from '../Components/ContextComponent';
 
 function Catalogue() {
-  const { allBeers, cataloguePage, setCataloguePage } = useContext(Context);
-  const [shownBeers, setShownBeers] = useState([]);
+  const {
+    allBeers,
+    cataloguePage,
+    setCataloguePage,
+    shownBeers,
+    setShownBeers,
+  } = useContext(Context);
 
   const abvZeroToFive = allBeers.filter((beer) => beer.abv < 5);
   const abvFiveToTen = allBeers.filter(
@@ -14,7 +19,7 @@ function Catalogue() {
 
   useEffect(() => {
     setShownBeers(allBeers);
-  }, [allBeers]);
+  }, [allBeers]); // eslint-disable-line
 
   const beers = shownBeers.map((beers) => {
     return <Beer key={beers.id} beer={beers} />;

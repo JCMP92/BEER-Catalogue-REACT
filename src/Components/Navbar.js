@@ -9,9 +9,6 @@ function Navbar() {
       <h2>
         <Link to="/catalogue">Catalogue</Link>
       </h2>
-      <h2>
-        <Link to="/favorites">Favorites</Link>
-      </h2>
     </nav>
   );
 }
