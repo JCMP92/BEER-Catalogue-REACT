@@ -4,6 +4,7 @@
   align-items: center;
 
   width: 100vw;
+  max-width: 100%; /* to avoid overflow */
 
   background-color: #eeeeee;
 }
