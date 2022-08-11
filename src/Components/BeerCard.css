@@ -26,8 +26,7 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 425px) {
-  .beer-cardr {
-    width: 200px;
+  .beer-card {
     height: 400px;
   }
 }
