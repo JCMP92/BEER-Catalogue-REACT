@@ -22,3 +22,12 @@
 .navbar > h2:hover {
   transform: scale(1.1);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+  .navbar > h2 {
+    font-size: 20px;
+    width: 120px;
+  }
+}

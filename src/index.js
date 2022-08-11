@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ContextProvider } from './Components/ContextComponent';
+import ScrollToTop from './ScrollToTop/ScrollTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ContextProvider>
     <Router>
+      <ScrollToTop />
       <App />
     </Router>
   </ContextProvider>

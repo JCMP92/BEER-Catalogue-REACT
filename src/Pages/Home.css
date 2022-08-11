@@ -17,3 +17,21 @@
   color: #eeeeee;
   text-shadow: 2px 2px 8px #393e46;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 810px) {
+  .home-page {
+    background-position: center;
+  }
+}
+@media (max-width: 425px) {
+  .home-page > h1 {
+    font-size: 130px;
+  }
+}
+@media (max-width: 320px) {
+  .home-page > h1 {
+    font-size: 110px;
+  }
+}

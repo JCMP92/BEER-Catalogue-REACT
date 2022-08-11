@@ -46,3 +46,25 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .beers-container {
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 810px) {
+  .beers-container {
+    width: 400px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .beers-container {
+    width: 310px;
+  }
+}
