@@ -28,6 +28,9 @@
 .filter-button:hover {
   transform: scale(1.1);
 }
+.page-buttons-container {
+  margin: 10px;
+}
 .page-btn {
   background-color: transparent;
   margin: 10px 2px;

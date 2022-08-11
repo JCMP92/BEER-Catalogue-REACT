@@ -1,0 +1,47 @@
+.beer-detail {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  padding: 20px;
+
+  background-color: #eeeeee;
+  font-family: 'Roboto';
+}
+.beer-detail > img {
+  height: 200px;
+}
+.tagline {
+  margin: 10px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 500px;
+}
+.food-pairing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 500px;
+}
+.beer-detail > button {
+  background-color: #ffd369;
+  margin: 0 5px;
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  width: 150px;
+  height: 40px;
+}
+
+.beer-detail > button:hover {
+  transform: scale(1.1);
+}
