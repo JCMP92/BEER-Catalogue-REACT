@@ -4,7 +4,7 @@
   flex-direction: column;
 
   width: 260px;
-  height: 350px;
+  height: 400px;
 
   margin: 10px;
   padding: 20px;
@@ -21,12 +21,4 @@
 .beer-card > h3:hover {
   transform: scale(1.1);
   color: #393e46;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 425px) {
-  .beer-card {
-    height: 400px;
-  }
 }
