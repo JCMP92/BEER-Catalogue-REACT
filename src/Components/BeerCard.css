@@ -28,5 +28,6 @@
 @media (max-width: 425px) {
   .beer-cardr {
     width: 200px;
+    height: 400px;
   }
 }
