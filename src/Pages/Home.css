@@ -5,7 +5,7 @@
 
   width: 100%;
   max-width: 100%; /* to avoid overflow */
-  height: calc(100vh - 100px);
+  height: calc(100% - 100px);
   max-height: 100%;
 
   background-image: url('../Img/gioele-fazzeri-mm1yH-RaU2s-unsplash.jpg');
