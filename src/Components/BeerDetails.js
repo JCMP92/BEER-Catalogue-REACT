@@ -19,7 +19,14 @@ function BeerDetails() {
       <div className="beer-detail">
         <h2>{thisBeer.name}</h2>
         <h4 className="tagline">{thisBeer.tagline}</h4>
-        <img src={thisBeer.image_url} alt={thisBeer.name} />
+        <img
+          src={
+            thisBeer.image_url
+              ? thisBeer.image_url
+              : 'https://images.punkapi.com/v2/keg.png'
+          }
+          alt={thisBeer.name}
+        />
         <h3>ABV : {thisBeer.abv}</h3>
         <div className="description">
           <h4>Description:</h4>
